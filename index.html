@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A&A Power Wash</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+
+body {
+  font-family:'Barlow',sans-serif;
+  background:#0a1628;
+  color:white;
+}
+
+.nav {
+  display:flex;
+  justify-content:space-between;
+  padding:20px 40px;
+  background:#06101f;
+  position:sticky;
+  top:0;
+}
+
+.nav h1 {
+  font-family:'Black Han Sans';
+  font-size:28px;
+}
+
+.nav a {
+  color:white;
+  text-decoration:none;
+  margin-left:20px;
+  font-weight:600;
+}
+
+.hero {
+  padding:80px 40px;
+  text-align:center;
+}
+
+.hero h2 {
+  font-family:'Black Han Sans';
+  font-size:64px;
+}
+
+.hero span {
+  color:#00b4e6;
+}
+
+.hero p {
+  margin-top:10px;
+  opacity:.7;
+}
+
+.btn {
+  margin-top:20px;
+  display:inline-block;
+  background:#00b4e6;
+  color:#0a1628;
+  padding:14px 28px;
+  font-weight:800;
+  text-decoration:none;
+  border:none;
+  cursor:pointer;
+}
+
+.services {
+  padding:60px 40px;
+}
+
+.grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:20px;
+}
+
+.card {
+  background:rgba(255,255,255,0.05);
+  padding:20px;
+  border-radius:8px;
+}
+
+.price {
+  color:#00b4e6;
+  font-size:24px;
+  margin-top:8px;
+}
+
+.booking {
+  padding:60px 40px;
+}
+
+.booking form {
+  max-width:500px;
+  margin:auto;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+
+.booking input, .booking select, .booking textarea {
+  padding:12px;
+  border:none;
+  border-radius:6px;
+}
+
+.calendar {
+  padding:60px 40px;
+}
+
+.calendar iframe {
+  width:100%;
+  height:600px;
+  border:none;
+  border-radius:10px;
+}
+
+.map {
+  padding:60px 40px;
+}
+
+.map iframe {
+  width:100%;
+  height:400px;
+  border:none;
+  border-radius:10px;
+}
+
+.footer {
+  padding:20px;
+  text-align:center;
+  background:#06101f;
+  font-size:12px;
+  opacity:.5;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<div class="nav">
+  <h1>A&A Power Wash</h1>
+  <div>
+    <a href="#services">Services</a>
+    <a href="#calendar">Book</a>
+    <a href="#map">Location</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <h2>A&A <span>POWER WASH</span></h2>
+  <p>Get your exact price in 15 minutes — no obligation</p>
+  <a class="btn" href="#calendar">Get a Free Quote</a>
+</div>
+
+<!-- SERVICES -->
+<div id="services" class="services">
+  <h3>Our Services</h3>
+  <div class="grid">
+    <div class="card"><h4>Driveway</h4><div class="price">$150–$275</div></div>
+    <div class="card"><h4>Sidewalks</h4><div class="price">$75–$125</div></div>
+    <div class="card"><h4>Trash Cans</h4><div class="price">$20–$35</div></div>
+    <div class="card"><h4>Patio / Deck</h4><div class="price">$120–$240</div></div>
+    <div class="card"><h4>Fence</h4><div class="price">$150–$300</div></div>
+    <div class="card"><h4>House Exterior</h4><div class="price">$200–$360</div></div>
+  </div>
+</div>
+
+<!-- CALENDAR -->
+<div id="calendar" class="calendar">
+  <h3 style="text-align:center; margin-bottom:20px;">Book a Free Quote</h3>
+  <iframe src="https://calendly.com/andrewaubuchon05/power-washing-quote"></iframe>
+</div>
+
+<!-- MAP -->
+<div id="map" class="map">
+  <h3 style="text-align:center; margin-bottom:20px;">Service Area</h3>
+  <iframe src="https://www.google.com/maps?q=Collin+County+Texas&output=embed"></iframe>
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  Call/Text: 214-563-5016 • Email: andrewaubuchon05@gmail.com <br><br>
+  Prefer texting? Send photos + address for a fast quote.
+</div>
+
+</body>
+</html>
